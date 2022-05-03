@@ -51,8 +51,8 @@ function eatApple() {
         //Hvis der er et æble bliver slangen længere og der spawner et nyt æble
         snakeLength++;
         eaten = true;
-        newApple();
-        grid[snakeHeadX][snakeHeadY].apple = false;
+        newApple(); //Generer et nyt æble
+        grid[snakeHeadX][snakeHeadY].apple = false; //Sætter .apple = false igen fordi det nye æble ikke er spist endnu
         score++;
         document.getElementById('score').innerHTML = "Score: "+ score;
     }
