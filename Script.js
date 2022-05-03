@@ -49,14 +49,14 @@ wall(2,14)
 
 // kalder functionen efter væggende sådan at væg og æble ikke er på samme firkant.
 newApple()
-
+// starter spillet, tegner griddet, kalder move funktionen og sætter eaten = false
 setInterval(function () {
-    drawGrid()
+    drawGrid() 
     
     if (gameOver == false ){
     move()
     eaten = false
-
+// Restart game teksten
     } else {
       ctx.font = "50px Arial"
       ctx.fillStyle = "red";
@@ -68,7 +68,7 @@ setInterval(function () {
   
     
 
-
+//framerate opdatere hver 200ms
 }, 200); 
 
 
